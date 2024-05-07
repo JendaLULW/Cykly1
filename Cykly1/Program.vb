@@ -7,10 +7,13 @@ Module Program
 
         Console.Write("Zadejte èíslo: ")
         cislo = Console.ReadLine
-        For x = 1 To cislo
+
+        For x = 0 To cislo Step 1 = Math.Sign(cislo)
             soucet = soucet + x
         Next
-        Console.WriteLine($"Souèet od 1 do {cislo} je {soucet}")
+
+        Console.WriteLine($"Souèet lichých èísel od 1 do {cislo} je {soucet}")
+
     End Sub
 End Module
 
