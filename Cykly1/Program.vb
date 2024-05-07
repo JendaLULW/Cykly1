@@ -3,15 +3,15 @@ Imports System
 Module Program
     Sub Main(args As String())
         Dim cislo As Integer
-        Dim pocet As Integer = 0
+        Dim soucet As Integer = 0
 
-        Do
-            Console.Write("Zadejte èíslo: ")
-            cislo = Console.ReadLine
-            pocet = pocet + 1
-            Console.WriteLine($"{pocet}. zadané èíslo je {cislo}")
-        Loop While pocet >= 10
-
+        Console.Write("Zadejte èíslo: ")
+        cislo = Console.ReadLine
+        For x = 1 To cislo
+            soucet = soucet + x
+        Next
+        Console.WriteLine($"Souèet od 1 do {cislo} je {soucet}")
     End Sub
 End Module
+
 
